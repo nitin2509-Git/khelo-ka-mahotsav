@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Khelo OS | Sprint 1 Command Center</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Khelo OS home">Khelo OS</a>
+        <div class="nav__links">
+          <a href="#modules">Modules</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#registrations">Registrations</a>
+        </div>
+      </nav>
+      <section class="hero__content" id="top">
+        <p class="eyebrow">Sprint 1 MVP</p>
+        <h1>Run grassroots tournaments from one operations cockpit.</h1>
+        <p class="hero__copy">Khelo OS gives organizers a fast command center for registrations, fixtures, venue readiness, and live operations.</p>
+        <div class="hero__actions">
+          <a class="button" href="#registrations">Review teams</a>
+          <a class="button button--secondary" href="#schedule">Open fixtures</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="metrics" aria-label="Tournament health metrics">
+        <article>
+          <span id="metricTeams">0</span>
+          <p>Confirmed teams</p>
+        </article>
+        <article>
+          <span id="metricReadiness">0%</span>
+          <p>Venue readiness</p>
+        </article>
+        <article>
+          <span id="metricMatches">0</span>
+          <p>Matches scheduled</p>
+        </article>
+        <article>
+          <span id="metricAlerts">0</span>
+          <p>Open ops alerts</p>
+        </article>
+      </section>
+
+      <section class="section" id="modules">
+        <div class="section__heading">
+          <p class="eyebrow">Operating system</p>
+          <h2>Sprint 1 modules</h2>
+        </div>
+        <div class="module-grid" id="moduleGrid"></div>
+      </section>
+
+      <section class="section two-column" id="schedule">
+        <div>
+          <p class="eyebrow">Fixtures</p>
+          <h2>Today's match flow</h2>
+          <div class="timeline" id="fixtureTimeline"></div>
+        </div>
+        <aside class="panel">
+          <h3>Ops briefing</h3>
+          <ul id="opsBriefing"></ul>
+        </aside>
+      </section>
+
+      <section class="section" id="registrations">
+        <div class="section__heading">
+          <p class="eyebrow">Registrations</p>
+          <h2>Team verification queue</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Team</th>
+                <th>Sport</th>
+                <th>Players</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="teamRows"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built for Khelo OS Sprint 1: launch fast, operate cleanly, learn daily.</p>
+    </footer>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
